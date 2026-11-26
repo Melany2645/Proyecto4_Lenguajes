@@ -1,0 +1,50 @@
+{
+  "servidor": {
+    "puerto": 4000,
+    "origenesPermitidos": ["http://localhost:5173"]
+  },
+
+  "nickname": {
+    "longitudMinima": 3,
+    "longitudMaxima": 16,
+    "patron": "^[A-Za-z0-9_\\-áéíóúÁÉÍÓÚñÑ]+$"
+  },
+
+  "partida": {
+    "expiracionSegundos": 180,
+    "intervaloMonitorMs": 1000,
+    "jugadoresMinimo": 2,
+    "jugadoresMaximo": 6,
+    "tipos": {
+      "TIEMPO": { "minimo": 30, "maximo": 1800, "unidad": "segundos" },
+      "LARGO": { "minimo": 5, "maximo": 100, "unidad": "celdas" }
+    },
+    "tematicas": [
+      { "id": "estandar", "nombre": "Estándar", "habilitada": true },
+      { "id": "fruit_mix", "nombre": "Fruit Mix", "habilitada": false }
+    ]
+  },
+
+  "paleta": [
+    { "id": "rojo", "nombre": "Rojo", "hex": "#E53935" },
+    { "id": "azul", "nombre": "Azul", "hex": "#1E88E5" },
+    { "id": "verde", "nombre": "Verde", "hex": "#43A047" },
+    { "id": "amarillo", "nombre": "Amarillo", "hex": "#FDD835" },
+    { "id": "naranja", "nombre": "Naranja", "hex": "#FB8C00" },
+    { "id": "morado", "nombre": "Morado", "hex": "#8E24AA" },
+    { "id": "turquesa", "nombre": "Turquesa", "hex": "#00ACC1" },
+    { "id": "rosado", "nombre": "Rosado", "hex": "#EC407A" }
+  ],
+
+  "juego": {
+    "cuentaRegresivaSegundos": 3,
+    "movimientosPorSegundo": 3,
+    "penalizacionColision": 1,
+    "veneno": {
+      "maximo": 3,
+      "intervaloAparicionSegundos": 10,
+      "intervaloCambioUbicacionSegundos": 5,
+      "inmovilizacionSegundos": 3
+    }
+  }
+}
