@@ -1,4 +1,4 @@
-import { ErrorDominio } from "../errors.js";
+import { ErrorDominio } from "../errores.js";
 import { EstadoPartida, TRANSICIONES } from "./Estados.js";
 
 /**
